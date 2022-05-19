@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Arc Gis Api -->
+    <link rel="stylesheet" href="https://js.arcgis.com/4.23/esri/themes/light/main.css">
+    <script src="https://js.arcgis.com/4.23/"></script>
+    <!-- Arc Gis Api -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maps Gallery</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="img-logo"><img src="image/kisspng-world-map-globe-united-states-globe-5ad2b66d992db0.3560859615237587016274 (1).png" alt=""></div>
+        <button class="drop"  onclick="show2()"><i class="fa-solid fa-bars"></i></button>
+        <div class="btn-group">
+            <button class="tablinks" onclick="openCity(event, 'Cairo')">السياحية</button>     
+            <button class="tablinks" onclick="openCity(event, 'London')">الزراعية</button>
+            <button class="tablinks" onclick="openCity(event, 'Paris')">الجوفية</button>
+            <button class="tablinks" onclick="openCity(event, 'fina')">الادارية</button>     
+            <button class="tablinks" onclick="openCity(event, 'Tokyo')">السطح</button>
+            <button class="tablinks" onclick="openCity(event, 'doha')">السكان</button>
+            <button class="tablinks" onclick="openCity(event, 'GERMAN')">الخدمات</button>
+            <button class="tablinks" onclick="openCity(event, 'deutschland')">المناخ</button>
+        </div>
+        </header>
+        <div class="landing">
+            <div class="container">
+                <div class="text-gal">
+                    <p>هنا معرض الخرائط الخاص بنا كل ما عليك هو الضغط علي نوع الخرائط التي تود مشاهدتها</p>
+                </div>
+                <div id="doha" class="hiden">
+                <h3 class="second-title">خرائط السكان</h3>
+                </div>
+                <div id="deutschland" class="hiden">
+                <h3 class="second-title">المناخ</h3>
+
+                </div>
+                <div id="Cairo" class="hiden">
+                    <h3 class="second-title">الخرائط السياحية</h3>
+                    <div class="gallery_pics_holder">
+                        <div class="gallery_pics">
+                            <img src="image/الخرائط السياحية/WhatsApp Image 2022-04-21 at 9.42.54 PM.jpeg" alt="">
+                        </div>
+                        <div class="gallery_pics">
+                            <img src="image/الخرائط السياحية/المسار.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div id="Tokyo" class="hiden">
+                    <h3 class="second-title">خرائط السطح</h3>
+                </div>
+                <div id="fina" class="hiden">
+                    <h3 class="second-title">الادارية </h3>
+                </div>
+                
+                <div id="GERMAN" class="hiden">
+                    <h3 class="second-title"> الخدمات </h3>
+                </div>
+            <div id="London" class="hiden">
+                <h3 class="second-title">الخرائط الزراعية</h3>
+                <div class="gallery_pics_holder">
+                <div class="gallery_pics">
+                    <img src="image/الزراعية/الزمام.png" alt="">
+                </div>
+                
+                <div class="gallery_pics">
+                    <img src="image/الزراعية/الاستصلاح.png"  alt="">
+                </div>
+                
+                <div class="gallery_pics">
+                    <img src="image/الزراعية/الشتوية.png"  alt="">
+                </div>
+                
+                <div class="gallery_pics">
+                    <img src="image/الزراعية/الصيفية.png"  alt="">
+                </div>
+                
+                <div class="gallery_pics">
+                    <img src="image/الزراعية/الفاكهة.png"  alt="">
+                </div>
+                
+                <div class="gallery_pics">
+                    <img src="image/الزراعية/صوب الشتلات.png"  alt="">
+                </div>
+                
+                <div class="gallery_pics">
+                    <img src="image/الزراعية/تطور المساحة.png"  alt="">
+                </div>
+                <div class="gallery_pics">
+                    <img src="image/الزراعية/المساحة.png"  alt="">
+                </div>
+                
+                <div class="gallery_pics">
+                    <img src="image/الزراعية/الصوب.png"  alt="">
+                </div>
+                </div>
+            </div>
+            <div id="Paris" class="hiden">
+                <h3 class="second-title">الخرائط الجوفية  </h3>
+                <div class="gallery_pics_holder">
+                    
+
+                </div>   
+            </div> 
+            </div>    
+        </div>
+    <footer>
+        <div class="container">
+            <div class="box">
+            <a href="#" class="atl"><i class="fa-solid fa-book-atlas"></i></a>
+            <ul class="social">
+                <li>
+                <a href="#" class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                </li>
+                <li>
+                <a href="#" class="linkedin">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                </li>
+                <li>
+                <a href="#" class="whatsapp">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+                </li>
+            </ul>
+            <p class="text">
+                اطلس محافظة سوهاج تم اعداده من طرف طلاب شعبة نظم المعلومات الجغرافية ضمن متطلبات مشروع التخرج
+              </p>
+            </div>
+            <div class="box">
+              <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+                <li><a href="Team.html">Team</a></li>
+                <li><a href="tool.html">Tools</a></li>
+              </ul>
+            </div>
+            <div class="box">
+              <div class="line">
+                <i class="fa-solid fa-envelope"></i>
+                <div class="info">sohaguniversity@gmail.com</div>
+              </div>
+              <div class="line">
+                <i class="fa-solid fa-phone"></i>
+                <div class="info">
+                  01802240348
+                </div>
+              </div>
+              <div class="line">
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="info">Egypt, Sohag University</div>
+              </div>
+            </div>
+          </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

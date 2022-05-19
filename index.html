@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Arc Gis Api -->
+    <link rel="stylesheet" href="https://js.arcgis.com/4.23/esri/themes/light/main.css">
+    <script src="https://js.arcgis.com/4.23/"></script>
+    <!-- Arc Gis Api -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projrct</title>
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <header>
+      <h2><a href="#" class="logo">atlas</a></h2>
+      <button class="drop"  onclick="show()"><i class="fa-solid fa-bars"></i></button>
+      <ul id="list">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><button id="btn1" onclick="openWep()">Wep Map</button></li>
+          <li><a href="Gallery.html" >Maps Gallery</a></li>
+          <li><a href="tool.html">Tools</a></li>
+          <li><a href="Team.html">Team</a></li>
+      </ul>
+    </header>
+  <div class="landing">
+        <div class="earth"> </div>
+        <!-- ============================================ -->
+    <div class="web">
+      <div class="container">
+        <div class="content" id="mySidenav">
+              <div class="closeWep">
+                <button onclick="closeWep()"><i class="fa-solid fa-xmark"></i></button>
+              </div>
+              <div id="viewDiv"></div>
+              <div id="basemapGalleryDiv"></div>
+              <div id="FeatureLayer"></div>
+              <div class="btn-group1">
+                  <button id="btn">الجيولوجية</button>
+                  <button id="btn2">المسار</button>
+                  <button id="back" style="background-color: rgb(212, 14, 14);">Reload</button>
+                  <button id="btn3" >الفنادق</button>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Artical -->
+    <article>
+      <div class="big">
+        <h2>! اطلس محافظة سوهاج</h2>
+        <div class="text-img">
+          <img src="image/kisspng-question-mark-business-information-child-question-5ab8a8f04b7273.6574502715220513123091.png" alt="">
+          <p>مشروع تخرج الهدف منه هو انتاج خرائط لمحافظة سوهاج في كل المجالات   في سبيل التسهيل علي من هم بحاجة لتلك الخرائط بالاضافة الي اظهار مهارات خريجي نظم المعلومات الجغرافية علي استخدام التقنيات والادوات الحديثة في صنع وعرض الخرائط  بتلك التقنيات وهو ما استلزم جهد كبير من القائمين والمشرفين عليه </p>
+        </div>
+        <h2>خرائط الویب</h2>
+        <div class="text-img">
+          <p>خرائط الویب أو رسم الخرائط عبر الإنترنت ھو عملیة استخدام الخرائط التي تقدمھا أنظمة المعلومات الجغرافیة على الإنترنت، وبشكل أكثر تحدیدًا في شبكة الإنترنت العالمیة تحتوي الخرائط على خريطة أساس، وهي مجموعة من طبقات البيانات (يشتمل الكثير منها على نوافذ تفاعلية منبثقة مزودة بمعلومات عن البيانات)، ونطاق وأدوات انتقال للتحريك والتصغير/التكبير. بوجه عام، يتم استضافة خريطة الأساس والطبقات ومشاركتها من خلال  ومع ذلك، يمكن أن تتضمن الخرائط طبقات مُضافة مباشرةً إلى الخريطة، وكذلك طبقات وخرائط أساس يتم إسنادها خارجيًا. تحتوي العديد من الخرائط أيضًا على رموز محددة الحجم وتصميم ذكي آخر يُظهر البيانات والأنماط كما تتفاعل معه </p>    
+          <img src="image/kisspng-map-geographic-information-system-icon-gis-cliparts-5a76385f08e651.5180923215176971190365.png" alt="">
+        </div>
+        <h2>الخرائط البشرية</h2>
+        <div class="text-img">
+          <img src="image/5a28c3c29baeb2.6895204515126209946377.png" alt="">
+          <p>عبارة عن خرائط تدرس وترسم المعالم والظواهر البشرية الموجودة بالمحافظة ومنها  الخرائط السكانية وهي تدرس المراكز السكانية بشكل مفصل من حيث أماكنت توزعها وتصنيفاتها الادارية  وخرائط الكثافة السكانية التي تبين أماكن التركز السكاني والتبعثر السكاني والخرائط الزراعية بالاضافة الي خرائط الخدمات الموجودة بالمحافظة </p>
+        </div>
+        <h2> الخرائط الطبيعية</h2>
+        <div class="text-img">
+          <p>الخرائط الطبيعية  وهي الخرائط التي تتناول الجانب الطبيعي للمحافظة ومن بينها الخرائط الجيولوجية حيث يتم فيها إظهار الطبقات الأرضية الجيولوجية أو الوحدات الصخرية بالاضافة الي خرائط التضاريس مثل الخرائط الكنتورية التي تمثل المعالم الطبوغرافية للأرض بالأبعاد الثلاثية على الخريطةو خرائط الطقس والمناخ وهي التي تختص بإظهار الحالة الجوية للمحافظة.          </p>
+          <img src="image/kisspng-earth-globe-world-map-blue-earth-5a8e1ec882ef45.5250848715192634325363.png" alt="">
+        </div>
+      </div>
+      <div class="small">
+        <div class="information">
+          <img src="image/kisspng-sohag-university-suez-canal-university-ain-shams-u-science-fair-5b367d035f5979.5278345715302976033906.png" alt="">
+          <p>جامعة سوهاج / كلية الاداب</p>
+        </div>
+        <div class="text-info">
+          <p>: تم عمل هذا المشروع تحت اشراف</p>
+          <h4>الدكتور / حمدي نبيه</h4>
+          <h4>الدكتورة / هاجر الشاذلي</h4>
+          <p>2022/2021</p>
+        </div>
+        <div class="grad1">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <p>خريجين شعبة نظم المعلومات الجغرافية <br> 2022 / دفعة  </p>
+        </div>
+        <form>
+          <textarea class="comment" placeholder="Type your comment here." ></textarea>
+          <br>
+          <input type="submit" name="submit" value="Send">
+        </form>    
+      </div>
+    </article>
+  <footer>
+    <div class="container">
+      <div class="box">
+      <a href="#" class="atl"><i class="fa-solid fa-book-atlas"></i></a>
+      <ul class="social">
+          <li>
+          <a href="#" class="facebook">
+              <i class="fab fa-facebook-f"></i>
+          </a>
+          </li>
+          <li>
+          <a href="#" class="linkedin">
+              <i class="fa-brands fa-linkedin"></i>
+          </a>
+          </li>
+          <li>
+          <a href="#" class="whatsapp">
+              <i class="fa-brands fa-whatsapp"></i>
+          </a>
+          </li>
+      </ul>
+      <p class="text">
+          اطلس محافظة سوهاج تم اعداده من طرف طلاب شعبة نظم المعلومات الجغرافية ضمن متطلبات مشروع التخرج
+        </p>
+      </div>
+      <div class="box">
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Gallery.html">Gallery</a></li>
+          <li><a href="Team.html">Team</a></li>
+          <li><a href="tool.html">Tools</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <div class="line">
+          <i class="fa-solid fa-envelope"></i>
+          <div class="info">sohaguniversity@gmail.com</div>
+        </div>
+        <div class="line">
+          <i class="fa-solid fa-phone"></i>
+          <div class="info">
+            01802240348
+          </div>
+        </div>
+        <div class="line">
+          <i class="fa-solid fa-location-dot"></i>
+          <div class="info">Egypt, Sohag University</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
